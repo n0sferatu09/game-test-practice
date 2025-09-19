@@ -70,7 +70,9 @@ export default function game() {
 
   // Handle Sonic colliding with enemies
   sonic.onCollide("enemy", (enemy) => {
-    if (!sonic.isGrounded()) {
+    const isJumpingOnHead = sonic.pos.y + sonic.height / 2 < enemy.pos.y + enemy.height / 3;
+
+    if (!sonic.isGrounded() && isJumpingOnHead) {
       // If Sonic is in the air and collides with an enemy
       k.play("destroy", { volume: 0.5 });
       k.play("hyper-ring", { volume: 0.5 });
