@@ -50,7 +50,7 @@ export default function gameover(citySfx) {
       size: 64,
     }),
     k.anchor("center"), // Center the text
-    k.pos(k.center().x + 400, k.center().y - 200), // Position to the right
+    k.pos(k.center().x - 400, k.center().y - 200), // Position to the right
   ])
 
   // Display the best score
@@ -60,7 +60,7 @@ export default function gameover(citySfx) {
       size: 64,
     }),
     k.anchor("center"), // Center the text
-    k.pos(k.center().x - 400, k.center().y - 200), // Position to the left
+    k.pos(k.center().x + 400, k.center().y - 200), // Position to the left
   ]);
 
 ;
