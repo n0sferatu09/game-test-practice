@@ -27,7 +27,7 @@ export default function mainMenu() {
 
   // Add the main menu title
   k.add([
-    k.text("Не соник мчит в ЧТОТИБ", { font: "mania", size: 96 }),
+    k.text("Соник мчит в ЧТОТИБ", { font: "mania", size: 96 }),
     k.anchor("center"), // Center the text
     k.pos(k.center().x, 200), // Position it in the top-center
   ]);
